@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Cashback</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="header-actions">
+      <h1><i class="fas fa-hand-holding-dollar"></i> Calculadora de Cashback</h1>
+      <button id="themeToggle" class="theme-btn"><i class="fas fa-moon"></i></button>
+    </div>
+
+    <div class="card">
+      <label><i class="fas fa-user-tag"></i> Tipo de Cliente</label>
+      <select id="tipoCliente">
+        <option value="Regular">Regular</option>
+        <option value="VIP">VIP</option>
+      </select>
+
+      <label><i class="fas fa-wallet"></i> Valor da Compra (R$)</label>
+      <input type="number" id="valorCompra" min="0" step="0.01" placeholder="Ex: 600.00" />
+
+      <label><i class="fas fa-percent"></i> Cupom de Desconto (%)</label>
+      <input type="number" id="descontoPct" min="0" max="100" step="1" placeholder="Ex: 20" value="0" />
+
+      <button id="calcBtn"><i class="fas fa-calculator"></i> Calcular Cashback</button>
+    </div>
+
+    <div class="resultado" id="resultado" style="display:none">
+      <h2><i class="fas fa-chart-line"></i> Resultado</h2>
+      <p>Valor Final: <strong id="resValorFinal"></strong></p>
+      <p>Cashback: <strong id="resCashback" class="highlight"></strong></p>
+    </div>
+
+    <div class="historico" id="historicoSection">
+      <h2><i class="fas fa-history"></i> Seu Histórico de Consultas</h2>
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>Tipo</th>
+              <th>Valor Compra</th>
+              <th>Desconto</th>
+              <th>Valor Final</th>
+              <th>Cashback</th>
+              <th>Data</th>
+            </tr>
+          </thead>
+          <tbody id="historicoBody"></tbody>
+        </table>
+      </div>
+      <p id="semHistorico" style="text-align:center; display:none; margin-top: 20px;">Nenhum histórico encontrado para seu IP.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
