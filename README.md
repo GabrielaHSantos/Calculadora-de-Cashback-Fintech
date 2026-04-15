@@ -90,6 +90,16 @@ Confira as capturas de tela da aplicação na pasta [evidencias/](./evidencias):
 
 ### Resultados dos Testes
 Os testes automatizados cobrem os cenários principais do desafio:
+- **Cálculo de Cashback Base (5%)**: Validado.
+- **Bônus VIP (10% sobre base)**: Validado.
+- **Promoção Dobro (Compras > R$ 500)**: Validado.
+- **Integração com API**: Endpoints de cálculo e histórico testados.
+
+Para rodar os testes localmente:
+```bash
+cd backend
+pytest
+```
 
 ---
 Desenvolvido por **Gabriela**
