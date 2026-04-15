@@ -23,7 +23,8 @@ O objetivo foi criar uma aplicação robusta capaz de:
 
 ## Estrutura do Projeto
 
-desafio-nology/
+ ```bash
+ desafio-nology/
 ├── backend/
 │   ├── app/
 │   │   ├── api/v1/         # Endpoints da aplicação
@@ -38,7 +39,8 @@ desafio-nology/
 │   ├── public/             # Assets estáticos (HTML, CSS, JS)
 │   └── Dockerfile          # Servidor Nginx para o frontend
 └── docker-compose.yml      # Gerenciador de serviços
-
+ ```
+ 
 ## Como Executar
 
 1. Certifique-se de que o Docker Desktop está rodando.
