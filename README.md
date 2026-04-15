@@ -19,6 +19,7 @@ O objetivo foi criar uma aplicação robusta capaz de:
 - **Docker / Docker Compose** — orquestração de containers para Banco, API e Frontend.
 - **Requirements.txt** — gerencia as dependências do Python. Mesmo no Docker, ele é crucial, pois o `Dockerfile` o utiliza para instalar as bibliotecas necessárias dentro do container de forma isolada e segura.
 - **Vanilla JS / CSS3** — frontend estático e responsivo com sistema de temas (Light/Dark).
+- **Railway** — plataforma de hospedagem para a API, Frontend e Banco de Dados.
 - **FontAwesome** — biblioteca de ícones vetoriais.
 
 ## Estrutura do Projeto
@@ -41,7 +42,12 @@ O objetivo foi criar uma aplicação robusta capaz de:
 └── docker-compose.yml      # Gerenciador de serviços
  ```
  
-## Como Executar
+## Links de Acesso
+
+- **Aplicação (Live):** 
+- **Documentação API (Swagger):** https://calculadora-de-cashback-fintech-production-5de4.up.railway.app/docs
+
+## Como Executar Localmente
 
 1. Certifique-se de que o Docker Desktop está rodando.
 2. Clone o repositório ou extraia os arquivos.

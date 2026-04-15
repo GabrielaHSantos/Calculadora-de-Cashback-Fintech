@@ -21,6 +21,6 @@ class ConsultaHistorico(BaseModel):
     cashback: float
     criado_em: datetime
 
-    class Config:
-        orm_mode = True
-        from_attributes = True
+    model_config = {
+        "from_attributes": True
+    }

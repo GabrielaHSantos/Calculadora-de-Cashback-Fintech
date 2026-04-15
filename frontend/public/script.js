@@ -1,4 +1,7 @@
-const API_URL = "http://localhost:8000"; // Usando backend local
+// Ajustar API_URL conforme o ambiente
+const API_URL = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1" 
+    ? "http://localhost:8000" 
+    : "https://calculadora-de-cashback-fintech-production-5de4.up.railway.app"; 
 
 const fmt = (v) => v.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 
@@ -57,7 +60,7 @@ async function carregarHistorico() {
     });
 }
 
-// Lógica de Modo Dark
+// Alternar entre temas (Light/Dark)
 const themeToggle = document.getElementById("themeToggle");
 const currentTheme = localStorage.getItem("theme") || "light";
 
